@@ -1,8 +1,12 @@
 # poetry-multi
 
-<!-- poetry config installer.parallel false && \
-poetry config virtualenvs.create false -->
+各プロジェクトDIRで初期設定時のみ実行
+~~~
+poetry config virtualenvs.in-project true --local
+~~~
 
-poetry config virtualenvs.in-project true
-poetry shell
+
+環境構築時に実行
+~~~
 poetry install
+~~~
